@@ -10,7 +10,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div className="grid h-screen grid-cols-[250px_1fr] grid-rows-[70px_1fr] gap-4 text-center">
+    <div className="grid h-screen grid-cols-[250px_1fr] grid-rows-[70px_1fr] gap-4">
       <Sidebar />
       <Navbar />
       <Dashboard />

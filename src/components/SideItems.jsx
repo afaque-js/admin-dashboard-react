@@ -13,7 +13,10 @@ export default function SideItems({ className = "" }) {
   return (
     <div className="grid gap-2">
       {sideItems.map((item) => (
-        <div key={item} className={`border-2 ${className}`}>
+        <div
+          key={item}
+          className={`bg-amber-100 rounded-full text-left place-content-center pl-4 ${className}`}
+        >
           {item}
         </div>
       ))}
