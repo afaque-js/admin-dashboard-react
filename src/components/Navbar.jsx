@@ -8,21 +8,21 @@ import {
 } from "react-icons/hi2";
 import messi from "../assets/messi.jpg";
 
-export default function Navbar() {
+export default function Navbar({ onMenuClick }) {
   return (
     <nav className="p-4 place-content-center">
       <ul className="flex gap-10 items-center">
         <li>
-          <HiBars3 className="size-6" />
-        </li>
-        <li>
-          <HiMagnifyingGlass className="size-6" />
+          <HiBars3 className="size-6 md:hidden" onClick={onMenuClick} />
         </li>
         <input
           type="search"
           placeholder="Search anything..."
           className="w-full pl-2 text-sm text-gray-900 border border-gray-300 bg-gray-50"
         />
+        <li>
+          <HiMagnifyingGlass className="size-6" />
+        </li>
         <img
           src={messi}
           alt="David Grey"
@@ -36,7 +36,7 @@ export default function Navbar() {
           <HiBellAlert className="size-6" />
         </li>
         <li>
-          <HiMiniPower className="size-6" />
+          <HiMiniPower className="size-6 text-zinc-400" />
         </li>
       </ul>
     </nav>

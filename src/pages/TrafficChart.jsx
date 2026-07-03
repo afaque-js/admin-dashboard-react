@@ -42,8 +42,10 @@ export default function TrafficChart() {
               className="w-3.5 flex-none size-3.5 rounded-full"
               style={{ backgroundColor: COLORS[index] }}
             />
-            <span className="w-64 flex-initial">{item.name}</span>
-            <span className="w-5 flex-initia">{item.value}%</span>
+            <div className="flex justify-between w-full">
+              <span className="w-64 flex-initial">{item.name}</span>
+              <span className="w-5 ">{item.value}%</span>
+            </div>
           </div>
         ))}
       </div>
