@@ -1,4 +1,3 @@
-import "./Dashboard.css";
 import {
   HiHome,
   HiOutlineExclamationCircle,
@@ -6,9 +5,9 @@ import {
   HiOutlineBookmark,
   HiOutlineEye,
 } from "react-icons/hi2";
-import Cards from "../components/Cards";
-import SalesChart from "../pages/SalesChart";
-import TrafficChart from "../pages/TrafficChart";
+import Cards from "./Cards";
+import SalesChart from "./SalesChart";
+import TrafficChart from "./TrafficChart";
 
 export default function Dashboard() {
   return (
@@ -26,7 +25,7 @@ export default function Dashboard() {
         </div>
       </div>
       <Cards
-        className="col-span-3 md:col-span-1 bg-neutral-500"
+        className="col-span-3 md:col-span-1 bg-neutral-300"
         title=" Weekly Sales"
         amount="$ 12,345"
         percent="Increase by 12.5%"
