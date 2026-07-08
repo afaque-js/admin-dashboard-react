@@ -1,0 +1,12 @@
+name: Learn GitHub Actions
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a greeting
+        run: echo "Hello! Your GitHub Action is working perfectly!"
