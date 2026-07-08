@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 const dbURI =
-  "mongodb+srv://shaikhafaque66:As7447675144%40@learning.nmnjlcm.mongodb.net/?appName=Learning";
+  "mongodb+srv://shaikhafaque66:<password>@learning.nmnjlcm.mongodb.net/?appName=Learning";
 
 mongoose
   .connect(dbURI)
