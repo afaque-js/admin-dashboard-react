@@ -18,10 +18,10 @@ export default function Navbar({ onMenuClick }) {
         <input
           type="search"
           placeholder="Search anything..."
-          className="w-full pl-2 text-sm text-gray-900 border border-gray-300 bg-gray-50"
+          className="focus:outline-none focus:bg-purple-100 w-full pl-2 text-sm text-gray-900 border rounded-lg border-gray-300 bg-gray-50"
         />
         <li>
-          <HiMagnifyingGlass className="size-6" />
+          <HiMagnifyingGlass className="size-6 hover:scale-115 ease-in-out duration-300" />
         </li>
         <img
           src={messi}
@@ -30,13 +30,13 @@ export default function Navbar({ onMenuClick }) {
         />
         <li className="text-nowrap">David Greymaxx</li>
         <li>
-          <HiEnvelopeOpen className="size-6" />
+          <HiEnvelopeOpen className="size-6 text-zinc-500 hover:text-purple-500" />
         </li>
         <li>
-          <HiBellAlert className="size-6" />
+          <HiBellAlert className="size-6 text-zinc-500 hover:text-purple-500" />
         </li>
         <li>
-          <HiMiniPower className="size-6 text-zinc-400" />
+          <HiMiniPower className="size-6 text-zinc-500 hover:text-purple-500" />
         </li>
       </ul>
     </nav>

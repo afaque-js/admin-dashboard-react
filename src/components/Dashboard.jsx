@@ -46,7 +46,7 @@ export default function Dashboard() {
         icon={<HiOutlineEye className="size-6" />}
       />
       <div
-        className="rounded-lg bg-white col-span-3 lg:col-span-1 p-8"
+        className="ease-in-out duration-300 hover:scale-105  rounded-lg bg-white col-span-3 lg:col-span-1 p-8"
         title="Visit and Sales Statistics"
       >
         {" "}

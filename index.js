@@ -27,6 +27,10 @@ const User = mongoose.model("User", userSchema);
 
 app.post("/signup", async (req, res) => {
   try {
+    const existingUser = await User.findOne({ email: req.body.email });
+    if (existingUser) {
+      return res.status(400).json({ error: "User already exists" });
+    }
     const newUser = new User({
       email: req.body.email,
       password: req.body.password,

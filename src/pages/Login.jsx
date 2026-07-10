@@ -1,11 +1,17 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSignup = async (e) => {
     e.preventDefault();
+    if (!username || !password) {
+      alert("Please enter both username and password.");
+      return;
+    }
 
     try {
       const response = await fetch("http://localhost:5000/signup", {
@@ -45,7 +51,8 @@ export default function Login() {
       const data = await response.json();
 
       if (response.ok) {
-        alert(data.message);
+        console.log(data.message);
+        navigate("/dashboard");
       } else {
         alert(data.error);
       }
@@ -96,13 +103,13 @@ export default function Login() {
             <button
               type="button"
               onClick={handleLogin}
-              className="mt-2 w-1/2 rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition hover:bg-blue-700"
+              className="w-1/2 mt-2 rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition hover:bg-blue-700"
             >
               Login
             </button>
             <button
               type="submit"
-              className="mt-2 w-1/2 rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition hover:bg-blue-700"
+              className="w-1/2 mt-2 rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition hover:bg-blue-700"
             >
               Sign Up
             </button>

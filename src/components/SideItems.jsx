@@ -15,7 +15,7 @@ export default function SideItems({ className = "" }) {
       {sideItems.map((item) => (
         <div
           key={item}
-          className={`border border-gray-300 rounded-lg text-purple-500 text-left place-content-center pl-4 ${className}`}
+          className={`hover:bg-purple-100  border border-gray-300 rounded-lg text-purple-500 text-left place-content-center pl-4 ${className}`}
         >
           {item}
         </div>

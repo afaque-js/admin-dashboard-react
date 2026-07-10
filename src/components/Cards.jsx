@@ -7,7 +7,9 @@ export default function Cards({
   className = "",
 }) {
   return (
-    <div className={`rounded-lg grid grid-cols-1 p-8 ${className}`}>
+    <div
+      className={`ease-in-out duration-300 hover:scale-105 rounded-lg grid grid-cols-1 p-8 ${className}`}
+    >
       <div className="flex justify-between gap-2 pb-2 items-center">
         {title && <h2>{title}</h2>}
         {icon && <span>{icon}</span>}
