@@ -36,7 +36,13 @@ export default function Navbar({ onMenuClick }) {
           <HiBellAlert className="size-6 text-zinc-500 hover:text-purple-500" />
         </li>
         <li>
-          <HiMiniPower className="size-6 text-zinc-500 hover:text-purple-500" />
+          <HiMiniPower
+            className="size-6 text-zinc-500 hover:text-purple-500 cursor-pointer"
+            onClick={() => {
+              localStorage.removeItem("token");
+              window.location.href = "/";
+            }}
+          />
         </li>
       </ul>
     </nav>

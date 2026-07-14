@@ -3,10 +3,9 @@ import { useState } from "react";
 // import viteLogo from "./assets/vite.svg";
 // import heroImg from "./assets/hero.png";
 // import React from "react";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Dashboard from "./components/Dashboard";
-import "./App.css";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
+import Dashboard from "../components/Dashboard";
 
 export default function App() {
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);

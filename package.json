@@ -4,17 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "vite": "vite",
-  "server": "nodemon index.js",
-  "dev": "concurrently \"npm run vite\" \"npm run server\"",
-  "build": "vite build",
-  "lint": "eslint .",
-  "preview": "vite preview"
-},
+    "vite": "vite",
+    "server": "nodemon index.js",
+    "dev": "concurrently \"npm run vite\" \"npm run server\"",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
+    "bcrypt": "^6.0.0",
     "cors": "^2.8.1",
+    "dotenv": "^17.4.2",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.7.3",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
@@ -25,6 +28,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/node": "^26.1.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
