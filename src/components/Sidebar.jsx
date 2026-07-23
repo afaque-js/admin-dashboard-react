@@ -7,7 +7,7 @@ export default function Sidebar({ isOpen, onClose }) {
   return (
     <>
       <aside
-        className={`fixed left-0 top-0 z-50 row-span-2 bg-white text-black p-4 grid grid-rows-[70px_70px_1fr] gap-6 transform transition-transform duration-300 md:static md:translate-x-0 md:w-[250px] ${
+        className={`fixed left-0 top-0 z-50 row-span-2 bg-white text-black p-4 grid grid-rows-[70px_70px_1fr_70px] gap-6 transform transition-transform duration-300 md:static md:translate-x-0 md:w-[250px] ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -40,6 +40,13 @@ export default function Sidebar({ isOpen, onClose }) {
           >
             ✕
           </button>
+        </div>
+        <div className="border-t border-gray-300 pt-4 hover:text-cyan-500">
+          <h6 className="text-xs text-center">v17.03.2002</h6>
+          <h6 className="text-xs text-center">
+            © 2026 Built by Afaque Shaikh.
+          </h6>
+          <h6 className="text-xs text-center">All rights reserved.</h6>
         </div>
       </aside>
     </>
